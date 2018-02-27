@@ -44,6 +44,7 @@ Hoike also teaches the user how to play the Ukulele. With pre-programmed songs, 
 ## Pinout
 
 ## Software
+![State Machine](https://imgur.com/tL3I6bu.jpg)
 
 ## Complexities
 
