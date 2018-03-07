@@ -9,7 +9,7 @@
 #define AUX4 5
 #define MAINBODY 6
 
-Adafruit_NeoPixel mainBody = Adafruit_NeoPixel(9, MAINBODY, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel mainBody = Adafruit_NeoPixel(18, MAINBODY, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel aux1 = Adafruit_NeoPixel(9, AUX1, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel aux2 = Adafruit_NeoPixel(9, AUX2, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel aux3 = Adafruit_NeoPixel(9, AUX3, NEO_GRB + NEO_KHZ800);
@@ -19,10 +19,6 @@ Adafruit_NeoPixel strips[] = { mainBody, aux1, aux2, aux3, aux4 };
 unsigned char numStrips = 5;
 
 void setup() {
-  #if defined (__AVR_ATtiny85__)
-    if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
-  #endif
-
   for (unsigned char i = 0; i < numStrips; i++) {
     strips[i].begin();
   }
