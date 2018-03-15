@@ -3,6 +3,8 @@
 
 ![Hoike Logo](https://imgur.com/ZAtH7ig.png)
 
+![Hoike](https://i.imgur.com/GzLUuW3.jpg)
+
 ![YouTube Demo](#)
 
 Hoike adds turns your analog ukulele into a audio visualizer and learning tool. With LED strips attached to the neck and
@@ -14,15 +16,6 @@ Hoike reads in the current audio with a microphone and will produce a hash that 
 
 #### G String
 ![G String](https://i.imgur.com/rGY9TQ0.jpg)
-
-#### C String
-![C String](https://imgur.com/opUocq5.jpg)
-
-#### E String
-![E String](https://imgur.com/sHS8DIM.jpg)
-
-#### A String
-![A String](https://imgur.com/EISc07D.jpg)
 
 #### C Chord
 ![C Chord](https://imgur.com/UPGMNuJ.jpg)
