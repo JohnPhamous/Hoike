@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Atmel Studio Solution File, Format Version 11.00
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "hoike", "hoike\hoike.cproj", "{0693E5DB-CC92-461B-923C-5439C508D823}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "hoike-main", "hoike-main\hoike-main.cproj", "{47571C67-8134-4918-898B-89E225551FE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|AVR = Release|AVR
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0693E5DB-CC92-461B-923C-5439C508D823}.Debug|AVR.ActiveCfg = Debug|AVR
-		{0693E5DB-CC92-461B-923C-5439C508D823}.Debug|AVR.Build.0 = Debug|AVR
-		{0693E5DB-CC92-461B-923C-5439C508D823}.Release|AVR.ActiveCfg = Release|AVR
-		{0693E5DB-CC92-461B-923C-5439C508D823}.Release|AVR.Build.0 = Release|AVR
+		{47571C67-8134-4918-898B-89E225551FE6}.Debug|AVR.ActiveCfg = Debug|AVR
+		{47571C67-8134-4918-898B-89E225551FE6}.Debug|AVR.Build.0 = Debug|AVR
+		{47571C67-8134-4918-898B-89E225551FE6}.Release|AVR.ActiveCfg = Release|AVR
+		{47571C67-8134-4918-898B-89E225551FE6}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

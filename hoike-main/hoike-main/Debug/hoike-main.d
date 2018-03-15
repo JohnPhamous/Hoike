@@ -1,4 +1,4 @@
-hoike.d hoike.o: .././hoike.c \
+hoike-main.d hoike-main.o: .././hoike-main.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -11,11 +11,16 @@ hoike.d hoike.o: .././hoike.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\lock.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- C:\Users\student\Desktop\hoike\hoike\include/io.c \
+ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\eeprom.h \
+ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h \
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/io.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h \
- c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h \
- C:\Users\student\Desktop\hoike\hoike\include/io.h
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/io.h \
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/Timer.c \
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/adc.c \
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/GetSetBit.c \
+ C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/usart_ATmega1284.h
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -41,12 +46,22 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
 
-C:\Users\student\Desktop\hoike\hoike\include/io.c:
+c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\eeprom.h:
+
+c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h:
+
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/io.c:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\avr\include\stdio.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h:
 
-c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1056\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h:
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/io.h:
 
-C:\Users\student\Desktop\hoike\hoike\include/io.h:
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/Timer.c:
+
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/adc.c:
+
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/GetSetBit.c:
+
+C:\Users\student\Desktop\hoike2\hoike-main\hoike-main\include/usart_ATmega1284.h:
