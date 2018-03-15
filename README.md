@@ -40,6 +40,10 @@ Hoike also teaches the user how to play the Ukulele. With pre-programmed songs, 
 * [Buttons](https://www.adafruit.com/product/1010)
 * [Electret Microphone](https://www.adafruit.com/product/1713)
 * [Breadboard](https://www.adafruit.com/product/65)
+* LCD Screen
+* Arduino Uno
+* Red, Blue, Green, and Yellow LEDs
+
 
 ## Pinout
 
@@ -49,9 +53,21 @@ Hoike also teaches the user how to play the Ukulele. With pre-programmed songs, 
 ## Complexities
 
 ### Completed Complexities:
+* Hash function to map sound to red, blue, green, and brightness values
+* USART between the atmega 1284 and Arduino Uno
+* Used the LCD screen to act as a menu and provide user information
 
 ### Incomplete Complexities:
+* Addressing individual LEDs on the LED strip
 
 ## Known Bugs and Shortcomings
+* Some LEDs in the fret board were blown while testing so many chord combinations cannot be shown
+  * Can be fixed by using the correct resistors and rewiring
+* LED strip sometimes does not turn off after switching from visualization mode to home 
+  * Need to send zero'd values before switching from visualization mode to home mode over USART
+* Microphone input has a lot of noise, even in a quiet room the lights still react
+  * Read in a baseline value (most likely in amplitude) and only visualize the difference between the baseline and the current amplitude
 
 ## Future Work
+* Making the wiring nicer and more compact so the Ukulele can be portable
+* Adding a tuner, lights will be red if you're flat, blue if you're sharp, and green if you're in tune
