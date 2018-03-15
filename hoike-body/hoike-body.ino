@@ -2,6 +2,7 @@
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
+#include <SoftwareSerial.h>
 
 #define AUX1 2
 #define AUX2 3
@@ -17,25 +18,61 @@ Adafruit_NeoPixel aux4 = Adafruit_NeoPixel(9, AUX4, NEO_GRB + NEO_KHZ800);
 
 Adafruit_NeoPixel strips[] = { mainBody, aux1, aux2, aux3, aux4 };
 unsigned char numStrips = 5;
+unsigned char serialReadCount = 0;
+int incomingByte = 0;
+
+SoftwareSerial mySerial(10, 11);
 
 void setup() {
   for (unsigned char i = 0; i < numStrips; i++) {
     strips[i].begin();
   }
-  
+  Serial.begin(9600);
+  mySerial.begin(9600);
+  randomSeed(analogRead(0));
 }
 
-void loop() {
+int red = 255;
+int green = 255;
+int blue = 255;
+int wait = 50;
+int zeroCount = 0;
 
-  unsigned char red = 255;
-  unsigned char green = 255;
-  unsigned char blue = 255;
-  unsigned char wait = 50;
+void loop() {
   
-  colorWipe(mainBody.Color(red, green, blue), 50, 255);
-  colorWipe(mainBody.Color(255, 0, 0), 50, 100);
-  colorWipe(mainBody.Color(255, 0, 255), 50, 50);
-  colorWipe(mainBody.Color(255, 255, 0), 50, 5);
+  if (mySerial.available() > 0) {
+    zeroCount = 0;
+    switch (serialReadCount) {
+      case 0:
+        red = mySerial.read();
+        serialReadCount++;
+        Serial.print("RED: ");
+        Serial.println(red, DEC);  
+        break;
+      case 1:
+        green = mySerial.read();
+        serialReadCount++;
+        Serial.print("GREEN: ");
+        Serial.println(red, DEC); 
+        break;
+      case 2:
+        blue = mySerial.read();
+        serialReadCount++;
+        Serial.print("BLUE: ");
+        Serial.println(red, DEC); 
+        break;
+    }   
+  }
+
+  red = red - (random(300) % 256);
+  blue = blue - (random(300) % 256);
+  green = green - (random(300) % 256);
+
+  if (serialReadCount == 3) {
+    colorWipe(mainBody.Color(red, green, blue), 1, 50);
+    serialReadCount = 0;
+  }
+  
 }
 
 void colorWipe(uint32_t c, uint8_t wait, uint8_t brightness) {
