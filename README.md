@@ -56,6 +56,7 @@ Hoike also teaches the user how to play the Ukulele. With pre-programmed songs, 
 * Hash function to map sound to red, blue, green, and brightness values
 * USART between the atmega 1284 and Arduino Uno
 * Used the LCD screen to act as a menu and provide user information
+* Using EEPROM to store the position of learning mode. THis way the user doesn't have to skip forward to go back to where they left off.
 
 ### Incomplete Complexities:
 * Addressing individual LEDs on the LED strip
