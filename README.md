@@ -5,7 +5,7 @@
 
 ![Hoike](https://i.imgur.com/GzLUuW3.jpg)
 
-![YouTube Demo](#)
+![YouTube Demo](https://youtu.be/20wSy8CgxoM)
 
 Hoike turns your analog ukulele into a audio visualizer and learning tool. With LED strips attached to the neck and
 body of the ukulele, you'll be able introduce a light show to your acoustic melodies.
